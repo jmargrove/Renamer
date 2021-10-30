@@ -12,7 +12,4 @@ Download the binary relase for mac and add in your urs/local/bin directory.
 
 The ```toname``` command accepts one argument the file name. 
 
-
-![Screenshot 2021-10-30 at 16 37 56](https://user-images.githubusercontent.com/18102592/139537584-4bad72c9-bfb4-4078-814b-221ee96c959c.png)
-
-
+![Screenshot 2021-10-30 at 16 49 19](https://user-images.githubusercontent.com/18102592/139538041-bcd8c0a5-474e-4695-8042-7d340828026c.png)
