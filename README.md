@@ -10,7 +10,7 @@ I like to have standardised filenames on my system. The format I like the most i
 
 Download the binary relase for mac and add in your urs/local/bin directory.
 
-The ```roname``` command accepts one argument the file name. 
+The ```toname``` command accepts one argument the file name. 
 
 
 ![Screenshot 2021-10-30 at 16 37 56](https://user-images.githubusercontent.com/18102592/139537584-4bad72c9-bfb4-4078-814b-221ee96c959c.png)
