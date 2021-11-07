@@ -1,4 +1,6 @@
 dist 
-build 
+build
+venv
+__pycache__
 *.spec 
 
