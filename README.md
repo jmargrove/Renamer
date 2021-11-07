@@ -1,6 +1,6 @@
 # Renamer
 
-<img src='assets/logo.svg'>
+<img src='assets/logo.svg' height="50px">
 
 ## Description
 
