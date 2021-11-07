@@ -1,4 +1,4 @@
-<img src='assets/logo.svg' height="100px">
+<img src='assets/logo.svg' height="80px" width="261px">
 
 ## Description
 
