@@ -1,6 +1,4 @@
-# Renamer
-
-<img src='assets/logo.svg' height="50px">
+<img src='assets/logo.svg' height="100px">
 
 ## Description
 

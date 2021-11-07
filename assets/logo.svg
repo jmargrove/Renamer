@@ -3,6 +3,7 @@
   <style>
     .logo-path {
       fill: #23292e;
+      transform: scale(2);
     }
     @media (prefers-color-scheme: dark) {
       .logo-path {
