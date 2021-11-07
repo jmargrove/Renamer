@@ -1,8 +1,8 @@
 build:
-	pyinstaller main.py --name toname --onefile
+	pyinstaller main.py --name renamer --onefile
 
 move:
-	mv dist/toname /usr/local/bin/
+	mv dist/renamer /usr/local/bin/
 
 test: 
 	pytest tests
