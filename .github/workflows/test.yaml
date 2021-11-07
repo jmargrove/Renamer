@@ -16,4 +16,4 @@ jobs:
           python -m pip install --upgrade pip 
           pip install -r requirements.txt
       - name: run-unit-tests
-        run: python -m pytest
+        run: make test
