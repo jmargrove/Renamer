@@ -1,6 +1,6 @@
 # Renamer
 
-![logo]('assets/logo.svg')
+<img src='assets/logo.svg'>
 
 ## Description
 
