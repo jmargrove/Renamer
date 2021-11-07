@@ -1,0 +1,16 @@
+{
+  "python.linting.enabled": true,
+  "python.pythonPath": "venv/bin/python",
+  "python.linting.pylintPath": "${workspaceRoot}/venv/bin/yapf",
+  "python.linting.pylintEnabled": true,
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "yapf",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoSearchPaths": false,
+  "python.analysis.typeCheckingMode": "strict",
+  "editor.semanticTokenColorCustomizations": {
+    "[One Dark Pro]": {
+      "enabled": true,
+    }
+  }
+}
