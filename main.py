@@ -3,6 +3,7 @@ import os
 from datetime import datetime
 import re
 from utils.get_file_extension import get_file_extension
+from utils.kebab_case import kebab_case
 
 
 def renamer():
@@ -10,9 +11,10 @@ def renamer():
     full_file_name = sys.argv[1]
 
     extension = get_file_extension(full_file_name)
+    file_name = re.sub(r'\..+$', '', full_file_name)
+    new_name = kebab_case(file_name)
 
     file_name = re.sub(r'\..+$', '', full_file_name)
-    new_name = re.sub(r'\s+', "-", file_name).lower()
     wd = os.getcwd()
     old_name = f'{wd}/{file_name}.{extension}'
 
