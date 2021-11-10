@@ -1,14 +1,21 @@
-import sys
 import os
 from datetime import datetime
 import re
 from utils.get_file_extension import get_file_extension
 from utils.kebab_case import kebab_case
+import argparse
 
 
 def renamer():
     # Get the file name
-    full_file_name = sys.argv[1]
+    parser = argparse.ArgumentParser(
+        description="Formats file to kebab-case_yyMMdd."
+    )
+    parser.add_argument(
+        "full_file_name", type=str, help="The file to operate on."
+    )
+    args = parser.parse_args()
+    full_file_name = args.full_file_name
 
     extension = get_file_extension(full_file_name)
     file_name = re.sub(r'\..+$', '', full_file_name)
