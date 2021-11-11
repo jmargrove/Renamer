@@ -1,0 +1,1 @@
+FILE_ARG_ERROR = "full_file_name positional argument must be defined."

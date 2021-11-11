@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 import re
+from utils.constants import FILE_ARG_ERROR
 from utils.get_file_extension import get_file_extension
 from utils.kebab_case import kebab_case
 import argparse
@@ -14,7 +15,12 @@ def renamer():
     parser.add_argument(
         "full_file_name", type=str, help="The file to operate on."
     )
-    args = parser.parse_args()
+    args = None
+    try:
+        args = parser.parse_args()
+    except:
+        raise ValueError(FILE_ARG_ERROR)
+
     full_file_name = args.full_file_name
 
     extension = get_file_extension(full_file_name)
