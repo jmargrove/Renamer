@@ -42,6 +42,7 @@ def renamer():
     os.rename(old_name, new_name)
 
     print(f'🚀 Renamed the file {full_file_name} to {new_formatted_name}')
+    return new_formatted_name
 
 
 if __name__ == "__main__":
