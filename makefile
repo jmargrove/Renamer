@@ -1,7 +1,9 @@
 build:
+	rm -rf dist
 	pyinstaller main.py --name renamer --onefile
 
 move:
+	rm -rf /usr/local/bin/renamer
 	cp dist/renamer /usr/local/bin/
 
 test: 
