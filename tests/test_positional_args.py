@@ -1,7 +1,6 @@
-import os
-from pathlib import Path
+# import os
 from subprocess import run
-import tempfile
+# import tempfile
 import unittest
 
 PYTHON3 = "python3"
@@ -18,8 +17,8 @@ class TestPositionalArgs(unittest.TestCase):
         process = run(get_command())
         self.assertEqual(process.returncode, 1)
 
-    def test_file(self):
-        with tempfile.NamedTemporaryFile(prefix=os.path.basename(__file__)
-                                         ) as tf:
-            process = run([PYTHON3, RENAMER, tf.name])
-            self.assertEqual(process.returncode, 0)
+    # def test_file(self):
+    #     prefix = os.path.basename(__file__)
+    #     with tempfile.NamedTemporaryFile(prefix) as tf:
+    #         process = run([PYTHON3, RENAMER, tf.name])
+    #         self.assertEqual(process.returncode, 0)

@@ -22,5 +22,28 @@ class TestGetFileExtension(unittest.TestCase):
                 self.assertEqual(extension, key)
 
     def test_file_extension_fails(self):
-        print("testing test file")
         self.assertRaises(NameError, get_file_extension, "python.py$")
+
+    def test_dir_prefix(self):
+        extension = get_file_extension('directory/test.py')
+        self.assertEqual(extension, 'py')
+
+    def test_dir_prefix_dot_slash(self):
+        extension = get_file_extension("./directory/test.py")
+        self.assertEqual(extension, 'py')
+
+    def test_dir_with_kebabcase(self):
+        extension = get_file_extension('./directory/test-test.tsx')
+        self.assertEqual(extension, 'tsx')
+
+    def test_nested_dir(self):
+        extension = get_file_extension('./dir/dir/directory/test-test.tsx')
+        self.assertEqual(extension, 'tsx')
+
+    def test_dir_with_numbers(self):
+        extension = get_file_extension('./directory-88/test-test.tsx')
+        self.assertEqual(extension, 'tsx')
+
+    def test_file_name_with_numbers(self):
+        extension = get_file_extension('./directory-88/test-test-88.tsx')
+        self.assertEqual(extension, 'tsx')

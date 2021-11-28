@@ -12,16 +12,14 @@ def renamer():
     parser = argparse.ArgumentParser(
         description="Formats file to kebab-case_yyMMdd."
     )
-    parser.add_argument(
-        "full_file_name", type=str, help="The file to operate on."
-    )
+    parser.add_argument("file", type=str, help="The file to operate on.")
     args = None
     try:
         args = parser.parse_args()
     except:
         raise ValueError(FILE_ARG_ERROR)
 
-    full_file_name = args.full_file_name
+    full_file_name = args.file
 
     extension = get_file_extension(full_file_name)
     file_name = re.sub(r'\..+$', '', full_file_name)
