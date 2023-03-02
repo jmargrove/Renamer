@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a file formatter build with python and converted into a binary. Nothing fancy it simply takes a standard file name and converts it to kebab-case_yyMMdd.
+This project is a file formatter build with python and converted into a binary. Nothing fancy it simply takes a standard file name and converts it to kebab-case_yyMMdd....
 
 ## Rational
 
